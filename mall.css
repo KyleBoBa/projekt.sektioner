@@ -44,10 +44,27 @@ header{
 	color: #004791;
 	background: #FFFFFF;
 }
+.intro{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-direction: column;
+}
+.intro h1{
+	color: #004791;
+}
+.introImg{
+}
 .huvudSektioner{
     margin: 50px auto;
 }
 .huvudSektioner h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	color: #004791;
+}
+.huvudSektioner h2{
     display: flex;
     justify-content: center;
     align-items: center;
