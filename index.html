@@ -7,13 +7,14 @@
 	<title>KTH sektioner</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">	
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
   	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<link rel="stylesheet" href="mall.css">
 </head>
 <body>
+    <!--  -->
 	<header>
 		<figure class="huvudLogga">
             <a href="/">
@@ -28,13 +29,13 @@
 		<nav class="nav-bar">
 			<ul>
 				<li>
-					<a class="active" href="#">Start</a>
+					<a class="active" href="/">Start</a>
 				</li>
 				<li>
-					<a href="meny.html">Sektioner</a>
-				</li>		
+					<a href="sektioner.html">Sektioner</a>
+				</li>
 				<li>
-					<a href="hitta.html">Hitta oss</a>
+					<a onclick="scrollToSection('hitta')">Hitta oss</a>
 				</li>
 				<li>
 					<a href="tel:0123-45678">Ring oss 0123-45678</a>
@@ -47,87 +48,91 @@
 			<h1>Tillsammans löser vi framtidens samhällsutmaningar</h1>
 			<img class="introImg" src="/bilder/kth-borggården.jpg" alt="kth borggården">
 		</div>
-		<div class="huvudSektioner">
+		<div class="huvudSektioner" id="sektioner">
 			<h1>SEKTIONERNA PÅ KTH</h1>
 			<p></p>
 			<div class="cardContainer">
 				<div class="card">
-					<img src="/bilder/sektioner/cl.jpg" alt="cl">
+					<img src="bilder/sektions_bilder/cl.jpg" alt="cl">
 					<div class="cardInfo">
 						<h2>Civilingenjör och lärare</h2>
-						<p>Blah blah csgo laget waow omg 
+						<p>Blah blah csgo laget waow omg
 						csgo lag waow text text lorem ipsum we</p>
-						<a href="cl.html" class="btn">Läs vidare</a>
+						<a href="CL-sektionen.html" class="btn">Läs vidare</a>
 					</div>
 				</div>
 				<div class="card">
-					<img src="/bilder/sektioner/bergs.jpg" alt="bergs">
+					<img src="bilder/sektions_bilder/bergs.jpg" alt="bergs">
 					<div class="cardInfo">
 						<h2>Bergs</h2>
-						<p>Blah blah lol laget waow omg 
+						<p>Blah blah lol laget waow omg
 						loool lag waow text text lorem ipsum we</p>
 						<a href="bergs.html" class="btn">Läs vidare</a>
 					</div>
 				</div>
 				<div class="card">
-					<img src="/bilder/sektioner/data.jpg" alt="data">
+					<img src="bilder/sektions_bilder/data.jpg" alt="data">
 					<div class="cardInfo">
 						<h2>Data</h2>
-						<p>Blah blah valorant laget waow omg 
+						<p>Blah blah valorant laget waow omg
 						valorant lag waow text text lorem ipsum we</p>
 						<a href="data.html" class="btn">Läs vidare</a>
 					</div>
 				</div>
 				<div class="card">
-					<img src="/bilder/sektioner/fysik.jpg" alt="fysik">
+					<img src="bilder/sektions_bilder/fysik.jpg" alt="fysik">
 					<div class="cardInfo">
 						<h2>Fysik</h2>
-						<p>Blah blah valorant laget waow omg 
+						<p>Blah blah valorant laget waow omg
 						valorant lag waow text text lorem ipsum we</p>
 						<a href="fysik.html" class="btn">Läs vidare</a>
 					</div>
 				</div>
 				<div class="card">
-					<img src="/bilder/sektioner/arkitekt.jpg" alt="arkitekt">
+					<img src="bilder/sektions_bilder/arkitekt.jpg" alt="arkitekt">
 					<div class="cardInfo">
 						<h2>Arkitekt</h2>
-						<p>Blah blah valorant laget waow omg 
+						<p>Blah blah valorant laget waow omg
 						valorant lag waow text text lorem ipsum we</p>
 						<a href="arkitekt.html" class="btn">Läs vidare</a>
 					</div>
 				</div>
 				<div class="card">
-					<img src="/bilder/sektioner/maskin.jpg" alt="maskin">
+					<img src="bilder/sektions_bilder/maskin.jpg" alt="maskin">
 					<div class="cardInfo">
 						<h2>Maskin</h2>
-						<p>Blah blah valorant laget waow omg 
+						<p>Blah blah valorant laget waow omg
 						valorant lag waow text text lorem ipsum we</p>
-						<a href="maskin.html" class="btn">Läs vidare</a>
+						<a href="Projekt-maskin.html" class="btn">Läs vidare</a>
 					</div>
 				</div>
 				<div class="card">
-					<img src="/bilder/sektioner/elektro.jpg" alt="elektro">
+					<img src="bilder/sektions_bilder/elektro.jpg" alt="elektro">
 					<div class="cardInfo">
 						<h2>Elektro</h2>
-						<p>Blah blah valorant laget waow omg 
+						<p>Blah blah valorant laget waow omg
 						valorant lag waow text text lorem ipsum we</p>
 						<a href="elektro.html" class="btn">Läs vidare</a>
 					</div>
 				</div>
 			</div>
 		</div>
+		<div class="hitta" id="hitta">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2033.9866532599685!2d18.0702566!3d59.349870599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f779d96ed48cb%3A0xb1366ae00b879b4a!2sKTH%20Royal%20Institute%20of%20Technology!5e0!3m2!1sen!2sse!4v1709078504412!5m2!1sen!2sse" width="600" height="450" style="border:0;"></iframe>
+		</div>
 	</div>
+	<!--footer start-->
 	<footer>
         <div class="footer-content">
             <h3>KTH SEKTIONER</h3>
-            <p> KTH, en av Sveriges främsta tekniska högskolor, 
-				är uppdelad i flera sektioner som representerar olika teknikdiscipliner. 
-				Från Elektroteknik till Maskinteknik, varje sektion utgör en 
-				viktig del av den mångfacetterade teknologiska utbildningen på skolan. 
-				Dessa sektioner fungerar som en plattform för studenter att fördjupa 
-				sig i sitt valda område och skapa en stark gemenskap med likasinnade. 
-				Med en stark koppling mellan teori och praktik, möjliggör sektionerna 
-				på KTH en omfattande inlärningsmiljö där studenter kan utforska och 
+            <p> KTH, en av Sveriges främsta tekniska högskolor,
+				är uppdelad i flera sektioner som representerar olika teknikdiscipliner.
+				Från Elektroteknik till Maskinteknik, varje sektion utgör en
+				viktig del av den mångfacetterade teknologiska utbildningen på skolan.
+				Dessa sektioner fungerar som en plattform för studenter att fördjupa
+				sig i sitt valda område och skapa en stark gemenskap med likasinnade.
+				Med en stark koppling mellan teori och praktik, möjliggör sektionerna
+				på KTH en omfattande inlärningsmiljö där studenter kan utforska och
 				utveckla sina färdigheter för att möta framtidens teknologiska utmaningar.</p>
         </div>
         <ul class="socials">
@@ -140,11 +145,13 @@
             <p>Copyright &copy;2024</p>
         </div>
     </footer>
+	<!--footer slut-->
 <!--slickslider för sektioner-->
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <script type="text/javascript">
+
 	$(document).ready(function(){
       $('.cardContainer').slick({
         slidesToShow: 3,
@@ -154,7 +161,14 @@
       });
     });
 </script>
-<!--hamburgermeny-->
+<!--scroll script, navigation på egen sida-->
+<script>
+	function scrollToSection(sectionId) {
+		const section = document.getElementById(sectionId);
+		section.scrollIntoView({ behavior: 'smooth' });
+	}
+</script>
+<!--hamburgermeny, för header, behövs inte egentligen-->
 <script>
 	hamburger = document.querySelector(".hamburger");
 	hamburger.onclick = function(){
@@ -162,72 +176,24 @@
 		navBar.classList.toggle("active");
 	}
 </script>
-<!--tid räknare-->
+<!--tid räknare, öppettider av pubar, sektionslokal eller någonting annat som tillhör-->
 <script>
-	function getDayOfWeek(){
-		var daysOfWeek = ["Söndag", "Måndag", "Tisdag", "Onsdag", "Torsdag", "Fredag", "Lördag"];
-		var now = new Date();
-		var dayOfWeek = daysOfWeek[now.getDay()];
-		return dayOfWeek;
-	}
-	function getTimeOfDay(){
-		var now = new Date();
-		var hours = now.getHours();
-		var minutes = now.getMinutes();
-		var seconds = now.getSeconds();
-		var timeOfDay = "AM";
-		if (hours > 12){
-			hours -= 12;
-			timeOfDay = "PM";
-		}
-		if (hours == 0){
-			hours = 12;
-		}
-		if (minutes < 10){
-			minutes = "0" + minutes;
-		}
-		if (seconds < 10){
-			seconds = "0" + seconds;
-		}
-		var timeString = hours + ":" + minutes + ":" + seconds + " " + timeOfDay;
-		return timeString;
-	}
-	function getOpeningHours(){
-		var now = new Date();
-		var dayOfWeek = now.getDay();
-		var hours = now.getHours();
-		var minutes = now.getMinutes();
-		var openingHours = [
-			{dayOfWeek: 0, hours: "12-9pm"}, // Söndag
-			{dayOfWeek: 1, hours: "11am-9pm"}, // Måndag
-			{dayOfWeek: 2, hours: "11am-9pm"}, // Tisdag
-			{dayOfWeek: 3, hours: "11am-9pm"}, // Onsdag
-			{dayOfWeek: 4, hours: "11am-9pm"}, // Torsdag
-			{dayOfWeek: 5, hours: "11am-9pm"}, // Fredag
-			{dayOfWeek: 6, hours: "12-9pm"} // Lördag
-		];
-		var openingHoursString = "";
-		for (var i = 0; i < openingHours.length; i++){
-			if (openingHours[i].dayOfWeek == dayOfWeek){
-				openingHoursString = openingHours[i].hours;
-				break;
-			}
-		}
-		if (openingHoursString){
-			return openingHoursString;
-		} else{
-			return "Closed";
-		}
-	}
-	function updateClock(){
-		var dayOfWeek = getDayOfWeek();
-		var timeString = getTimeOfDay();
-		var openingHours = getOpeningHours();
-		document.getElementById("dayOfWeek").innerHTML = dayOfWeek;
-		document.getElementById("time").innerHTML = timeString;
-		document.getElementById("openingHours").innerHTML = "Öppettiderna är " + openingHours;
-	}
-	setInterval(updateClock, 1000);
+    function updateClock() {
+      const now = new Date();
+      const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+      const dayOfWeek = days[now.getDay()];
+      const hours = now.getHours();
+      const minutes = String(now.getMinutes()).padStart(2, '0');
+      const seconds = String(now.getSeconds()).padStart(2, '0');
+      const timeString = `${dayOfWeek}, ${hours}:${minutes}:${seconds}`;
+      document.getElementById('clock').innerText = timeString;
+
+      // kollar om klockan är mellan  9 och 3
+      const isOpen = hours >= 21 || hours < 3;
+      document.getElementById('status').innerText = isOpen ? 'Open' : 'Closed';
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
 </script>
 </body>
 </html>
